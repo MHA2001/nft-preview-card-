@@ -1,0 +1,156 @@
+
+:root{
+    --clr-primary-200 : hsl(215, 51%, 70%);
+    --clr-primary-400 : hsl(178, 100%, 50%);
+    --clr-primary-600: hsla(215, 52%, 70%, 0.2);
+
+
+    --clr-neutral-900:hsl(217, 54%, 11%);
+    --clr-neutral-800:hsl(216, 50%, 16%);
+    --clr-neutral-700: hsl(215, 32%, 27%);
+    --clr-neutral-100:hsl(0, 0%, 100%);
+
+    --ff-base:'Outfit', sans-serif;
+    --fw-bold:600;
+    --fw-normal:400;
+    --fw-light:300;
+}
+
+/* CSS Reset start */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* general styling */
+body{
+    background-color: var(--clr-neutral-900);
+    color:var(--clr-primary-200);
+    display: grid;
+    place-items: center;
+    font-family: var(--ff-base);
+    margin:1rem;
+}
+
+
+/* utilities */
+.flex-group{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* article */
+
+main{
+    --spacing-content:1.5rem;
+    background-color: var(--clr-neutral-800);
+    padding: var(--spacing-content);
+    border-radius:1rem;
+    margin: var(--spacing-content) 0px;
+}
+
+article{
+    flex-direction: column;
+}
+
+.nft__image{
+    border-radius: 1rem;
+}
+
+/** content */
+.content{
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content h1{
+    color: var(--clr-neutral-100);
+    font-size: 1.25rem;
+    align-self: flex-start;
+}
+
+.content > p{
+    font-weight: var(--fw-light);
+    padding-right: 1rem;
+}
+
+.data{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price{
+    color: var(--clr-primary-400);
+    font-weight: var(--fw-bold);
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.price::before{
+    content: "";
+    width:11px;
+    height:18px;
+    background-image: url(./images/icon-ethereum.svg);
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.time::before{
+    content: "";
+    width:17px;
+    height:17px;
+    background-image: url(./images/icon-clock.svg);
+}
+
+
+.footer{
+    width: 100%;
+    border-top: 1px solid var(--clr-primary-600);
+    padding: var(--spacing-content) 0px;
+    justify-content: flex-start;
+}
+
+
+.user{
+    color:var(--clr-neutral-100);
+}
+
+.user__image{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border: 0.5px solid var(--clr-neutral-100);
+    border-radius: 50%;
+}

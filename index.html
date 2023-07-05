@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | NFT preview card component</title>
 
 
@@ -11,25 +15,31 @@
 <body>
     <main>
 
-      <artical>
+      <article class="flex-group">
 
         <picture>
-          <img src="./images/image-equilibrium.jpg" alt="a glassy cub that stand in on corner of itself, have a blue color with purple light and reflex">
+          <img class="nft__image" src="./images/image-equilibrium.jpg" alt="a glassy cub that stand in on corner of itself, have a blue color with purple light and reflex">
         </picture>
 
-        <div>
+        <div class="content flex-group">
           <h1> Equilibrium #3429 </h1>
-        </div>
-        <p> Our Equilibrium collection promotes balance and calm. </p>
-        <div class="flex-group">
-          <p> 0.041 ETH </p>
-          <p> 3 days left </p>
-        </div>
-      </artical>
+          
+          <p> Our Equilibrium collection promotes balance and calm. </p>
+          
+          <div class="flex-group data">
+            <p class="price"> 0.041 ETH </p>
+            <p class="time"> 3 days left </p>
+          </div>
 
-      <footer class="flex-group">
-        <p>  Creation of Jules Wyvern </p>
-      </footer>
+          <div class="footer flex-group">
+            <img class="user__image"  src="./images/image-avatar.png">
+            <p > Creation of <span class="user"> Jules Wyvern</span> </p>
+          </div>
+
+        </div>
+
+      </article>
+
 
     </main>
 </body>
