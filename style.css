@@ -177,7 +177,7 @@ article{
 .footer{
     width: 100%;
     border-top: 1px solid var(--clr-primary-600);
-    padding: var(--spacing-content) 0px;
+    padding: var(--spacing-content) 0px 0px 0px;
     justify-content: flex-start;
     font-weight: var(--fw-light);
 }
